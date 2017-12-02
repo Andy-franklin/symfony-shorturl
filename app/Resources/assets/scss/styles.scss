@@ -1,0 +1,17 @@
+// 1: Variables
+@import "utils/variables/**/*.scss";
+
+// 2: Base
+@import "base/**/*.scss";
+
+// 3: Layout
+@import "layout/**/*.scss";
+
+// 4: Components
+@import "components/**/*.scss";
+
+// 5: Pages
+@import "pages/**/*.scss";
+
+// 6: Themes
+@import "themes/**/*.scss";
