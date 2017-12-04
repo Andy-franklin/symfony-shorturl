@@ -1,0 +1,21 @@
+default:
+    formatters:
+        pretty:
+            verbose: true
+            paths: true
+            snippets: false
+    suites:
+        default:
+            contexts_services:
+
+    extensions:
+        FriendsOfBehat\CrossContainerExtension: ~
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                bootstrap: vendor/autoload.php
+                path: app/TestAppKernel.php
+                class: TestAppKernel
+        Persata\SymfonyApiExtension: ~
+        FriendsOfBehat\ContextServiceExtension:
+            imports:
+                - "src/TheDrum/Behat/Resources/config/services.yml"

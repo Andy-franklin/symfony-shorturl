@@ -1,0 +1,14 @@
+AndyFranklin\UrlShortApiBundle\Entity\Url:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: originalUrl
+    properties:
+        originalUrl:
+            - NotBlank: ~
+            - Url:
+                message: The url "{{ value }}" is invalid.
+        shortUrl:
+            - NotBlank: ~
+        userIp:
+            - NotBlank: ~
+        dateCreated:
+            - NotBlank: ~

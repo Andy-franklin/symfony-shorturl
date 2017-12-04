@@ -1,0 +1,18 @@
+andy_franklin_url_short_api_homepage:
+    path:     /v1/urls/status
+    defaults: { _controller: AndyFranklinUrlShortApiBundle:Default:index }
+
+andy_franklin_url_short_get:
+    path: /v1/urls/{shortUrl}
+    defaults: { _controller: AndyFranklinUrlShortApiBundle:Default:retrieveUrl }
+    methods: [GET]
+
+andy_franklin_url_short_create:
+    path: /v1/urls
+    defaults: { _controller: AndyFranklinUrlShortApiBundle:Default:create }
+    methods: [POST]
+
+#andy_franklin_url_short_delete:
+#
+#andy_franklin_url_short_update:
+

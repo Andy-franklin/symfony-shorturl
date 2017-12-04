@@ -1,0 +1,7 @@
+services:
+    Persata\SymfonyApiExtension\Context\ApiContext:
+        calls:
+            - [setApiClient, ['@__behat__.api_client']]
+        tags:
+            - { name: fob.context_service }
+

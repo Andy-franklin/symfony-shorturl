@@ -1,0 +1,29 @@
+AndyFranklin\UrlShortApiBundle\Entity\Url:
+    type: entity
+    table: null
+    repositoryClass: AndyFranklin\UrlShortApiBundle\Repository\UrlRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        originalUrl:
+            type: string
+            length: 255
+            unique: true
+            column: original_url
+        shortUrl:
+            type: string
+            length: 255
+            unique: true
+            column: short_url
+        userIp:
+            type: string
+            length: 255
+            column: user_ip
+        dateCreated:
+            type: datetime
+            column: date_created
+    lifecycleCallbacks: {  }

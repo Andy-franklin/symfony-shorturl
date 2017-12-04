@@ -65,3 +65,21 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+fos_rest:
+    param_fetcher_listener: true
+    body_listener: true
+    format_listener:
+        enabled: true
+        rules:
+            - { path: '^/v1', priorities: ['json'], fallback_format: 'json' }
+    view:
+        view_response_listener: 'force'
+
+jms_serializer:
+    metadata:
+        auto_detection: true
+        directories:
+            url:
+                namespace_prefix: "AndyFranklinShortUrlApiBundle"
+                path: "@AndyFranklinUrlShortApiBundle/Resources/config/serializer"

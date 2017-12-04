@@ -1,0 +1,13 @@
+AndyFranklin\UrlShortApiBundle\Entity\Url:
+    exclusion_policy: ALL
+    properties:
+#        id:
+#            groups: [default]
+        originalUrl:
+            groups: [default]
+        shortUrl:
+            groups: [default]
+#        userIp:
+#            groups: [default]
+        dateCreated:
+            groups: [default]
